@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogiOS - Download Hub</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #0f0c1b);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg, #ff7b00, #ffae00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            color: #8a8a9e;
+            font-size: 1rem;
+        }
+
+        .hub-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        /* Glassmorphic App Card */
+        .app-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            width: 280px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 174, 0, 0.4);
+        }
+
+        /* Icon Placeholder */
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px auto;
+            background: linear-gradient(135deg, #ffae00, #ff5100);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            box-shadow: 0 8px 16px rgba(255, 81, 0, 0.3);
+        }
+
+        .app-title {
+            font-size: 1.3rem;
+            margin: 10px 0 5px 0;
+            font-weight: 600;
+        }
+
+        .app-meta {
+            font-size: 0.8rem;
+            color: #8a8a9e;
+            margin-bottom: 15px;
+        }
+
+        .app-desc {
+            font-size: 0.9rem;
+            color: #cccccc;
+            margin-bottom: 20px;
+            line-height: 1.4;
+            min-height: 50px;
+        }
+
+        /* Download Button */
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff7b00, #ffae00);
+            color: #000;
+            text-decoration: none;
+            padding: 10px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #ff9d00, #ffc800);
+        }
+
+        .download-btn:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DOGIOS DOWNLOAD HUB</h1>
+        <p>Get the latest official binaries for your custom WebOS ecosystem</p>
+    </header>
+
+    <div class="hub-container">
+        
+        <div class="app-card">
+            <div class="app-icon">🌐</div>
+            <div class="app-title">DogiOS Browser</div>
+            <div class="app-meta">v1.0.0 • Windows (.exe)</div>
+            <p class="app-desc">Experience the web with absolute clarity. Sleek, tabless, glassmorphic layout powered by PyQt5.</p>
+            <a href="DogiOS Browser.exe" download class="download-btn">Download</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

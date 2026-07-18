@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogi Browser</title>
+    <link rel="stylesheet" href="idk.css">
+</head>
+<body>
+    <div class="browser-container">
+        <div class="toolbar">
+            <div class="nav-buttons">
+                <button id="menu-btn" class="menu-btn" title="Menu">☰</button>
+                <button id="back-btn" title="Back">←</button>
+                <button id="forward-btn" title="Forward">→</button>
+                <button id="refresh-btn" title="Refresh">⟳</button>
+                <button id="home-btn" title="Home">⌂</button>
+            </div>
+            
+            <div class="address-container">
+                <input type="text" id="address-bar" placeholder="Search DogiOS or enter a URL" autocomplete="off">
+                <button id="load-button">Search</button>
+            </div> </div> <div id="menu-dropdown" class="menu-dropdown" aria-hidden="true"></div>
+
+        <div class="status-bar">
+            <span id="current-url">Ready</span>
+            <span id="load-status"></span>
+        </div>
+
+        <div class="content-area">
+            <iframe id="browser-frame"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
