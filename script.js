@@ -437,7 +437,7 @@ function findClosestResult(userInput, database) {
 
         function loadUrl(url) {
             if (settings.browserShutdown) {
-                showError('Cannot load URL while browser is shut down. Restart browser in Operator Settings.');
+                showError('Cannot load URL while browser is shut down. Restart browser in Operator Settings. If you don't have an admin account, you may contact an admin in your area.');
                 return;
             }
             // Validate and format URL
