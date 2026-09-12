@@ -298,6 +298,11 @@ function findClosestResult(userInput, database) {
                 'It can take place in formal settings like schools and universities, as well as through informal means like self-study and life experiences.',
                 'Education is essential for personal development and societal progress.'
             ],
+            'DogiOS': [
+                'DogiOS is a sleek, modern day OS application, that will not be a real bootable OS until 2027-2028.',
+                'Apps: Files, Terminal, Settings, Notes, Browser, and an itegrated start screen.'
+                'Early access will start at the alpha state.'
+            ]
         };
 
         // Initialize with home page — behavior depends on settings.homeBehavior
